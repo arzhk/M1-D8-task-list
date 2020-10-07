@@ -21,11 +21,13 @@ Create a method "removeLast" which removes the last item from the task list
 */
 
 function removeLast() {
-  let liArray = document.querySelectorAll("li");
+  let liArray = document.querySelectorAll("li"); // Create array of all the li
 
   if (liArray.length === 0) {
+    // IF statement checking the length of the array, if there are 0 element in the array ->
     alert("There are no entries to remove.");
   } else {
+    // If there is more than 1 element, find the last index and remove it
     liArray[liArray.length - 1].remove();
   }
 }
@@ -64,13 +66,13 @@ onchange event listener ad applies it as background to every list item
 
 let colourValue;
 
-let testB = function () {
+let colourGrab = function () {
   let colourValueHold = document.querySelector("#colorPicker").value;
   colourValue = colourValueHold;
 };
 
 window.addEventListener("DOMContentLoaded", function () {
-  document.querySelector("#colorPicker").addEventListener("change", testB);
+  document.querySelector("#colorPicker").addEventListener("change", colourGrab);
 });
 
 function changeTaskBackgroundColor() {
