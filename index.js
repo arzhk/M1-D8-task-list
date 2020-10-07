@@ -32,7 +32,15 @@ function removeLast() {
 /* EXERCISE 7: 
 Create a method "removeFirst" which removes the first item from the task list
 */
-function removeFirst() {}
+function removeFirst() {
+  let liArray = document.querySelectorAll("li");
+  let liArrayL = liArray.length;
+  if (liArrayL === 0) {
+    alert("There are no entries to remove.");
+  } else {
+    liArray[0].remove();
+  }
+}
 
 /* EXERCISE 8: 
 Create a method "getTasksAsArray" which returns (and print to the console) an array containing the tasks as string
