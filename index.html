@@ -14,11 +14,11 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheet.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="stylesheet.css" />
     <script src="index.js"></script>
     <title>Task List</title>
   </head>
@@ -49,7 +49,7 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
       onclick="getTasksAsArray()"
     />
 
-    <ul id="myTaskList"></ul>
+    <ul id="myTaskList" class="taskList"></ul>
 
     <hr />
 
@@ -65,5 +65,3 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
     <input type="button" value="Sort" onclick="bubblesort()" />
   </body>
 </html>
-
-<!DOCTYPE html>
