@@ -64,7 +64,7 @@ Create a method "changeTaskBackgroundColor" which takes the color from the color
 onchange event listener ad applies it as background to every list item
 */
 
-let colourValue;
+let colourValue = "black";
 
 let colourGrab = function () {
   let colourValueHold = document.querySelector("#colorPicker").value;

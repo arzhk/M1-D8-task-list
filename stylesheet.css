@@ -8,6 +8,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-color: #1c1c1c;
 }
 
 .taskList {
@@ -33,10 +35,13 @@ h1 {
   );
   color: #fff;
   padding: 20px;
+  text-shadow: rgba(0, 0, 0, 0.2) 3px 3px 4px;
 }
 
 .text {
   width: 50%;
+  min-width: 400px;
+  margin: 0 auto;
 }
 
 .instructions {
@@ -49,4 +54,41 @@ h1 {
     #c850c0 46%,
     #ffcc70 100%
   );
+}
+
+.buttonA {
+  margin: 10px;
+  height: 40px;
+  border: none;
+  padding: 0px 20px;
+  background-color: #fafafa;
+  background-image: linear-gradient(135deg, #fafafa 0%, #c8c8c8 100%);
+  border-radius: 12px;
+  transition: color ease-in-out 0.15s;
+  outline: none;
+}
+
+.buttonA:hover {
+  color: white;
+  background-color: #4158d0;
+  background-image: linear-gradient(225deg, #4158d0 0%, #c850c0 100%);
+  transition: all ease-in-out 0.15s;
+}
+
+input:first-child {
+  border-radius: 12px;
+  height: 40px;
+  outline: none;
+}
+
+.buttontype {
+  padding: 0px 10px;
+}
+
+.newTask input {
+  display: inline-block !important;
+}
+
+li {
+  color: #000;
 }

@@ -26,30 +26,34 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
     <h1>Welcome to your personal Task List!</h1>
     <br />
 
-    <div class="text"></div><span
-      >You can add any task you like by writing it in the specified field and
-      then press "Add new task"</span
-    ></div>
+    <div class="text">
+      <span
+        >You can add any task you like by writing it in the specified field and
+        then press "Add new task".</span
+      >
+    </div>
     <div class="instructions"></div>
 
     <br /><br />
 
-    <input type="text" id="newTask" />
-    <input type="button" value="Add new Task" onclick="addNewTask()" />
+    <div id="controlP">
+      <input type="text" id="newTask" />
+      <input type="button" value="Add new Task" onclick="addNewTask()" />
 
-    <!-- EXERCISE 3
+      <!-- EXERCISE 3
         Create a button "Remove Last Task" to trigger the method "removeLast"
         -->
-    <input type="button" value="Remove Last Task" onclick="removeLast()" />
-    <!-- EXERCISE 4
+      <input type="button" value="Remove Last Task" onclick="removeLast()" />
+      <!-- EXERCISE 4
         Create a button "Remove First Task" to trigger the method "removeFirst"
         -->
-    <input type="button" value="Remove First Task" onclick="removeFirst()" />
-    <input
-      type="button"
-      value="Print Tasks as Array"
-      onclick="getTasksAsArray()"
-    />
+      <input type="button" value="Remove First Task" onclick="removeFirst()" />
+      <input
+        type="button"
+        value="Print Tasks as Array"
+        onclick="getTasksAsArray()"
+      />
+    </div>
 
     <ul id="myTaskList" class="taskList"></ul>
 
