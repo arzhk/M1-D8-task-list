@@ -15,6 +15,10 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="index.js"></script>
     <title>Task List</title>
   </head>
@@ -25,7 +29,8 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
     <span
       >You can add any task you like by writing it in the specified field and
       then press "Add new task"</span
-    ><br /><br />
+    >
+    <br /><br />
 
     <input type="text" id="newTask" />
     <input type="button" value="Add new Task" onclick="addNewTask()" />
@@ -37,7 +42,11 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
     <!-- EXERCISE 4
         Create a button "Remove First Task" to trigger the method "removeFirst"
         -->
-    <input type="button" value="Remove First Task" onclick="removeFirst()" />
+    <input
+      type="button"
+      value="Print Tasks as Array"
+      onclick="getTasksAsArray()"
+    />
 
     <ul id="myTaskList"></ul>
 
