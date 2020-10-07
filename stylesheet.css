@@ -3,3 +3,21 @@
        Create a CSS class for the task list item with a border, a bold text and a bigger font size
        Style every button of the page to be bigger
     */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.taskList {
+  background-color: #bffcff;
+  border: 3px solid #558587;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
