@@ -21,11 +21,10 @@ Create a method "removeLast" which removes the last item from the task list
 
 function removeLast() {
   let liArray = document.querySelectorAll("li");
-  let liArrayL = liArray.length;
-  if (liArrayL === 0) {
+  if (liArray.length === 0) {
     alert("There are no entries to remove.");
   } else {
-    liArray[liArrayL - 1].remove();
+    liArray[liArray.length - 1].remove();
   }
 }
 
@@ -34,8 +33,7 @@ Create a method "removeFirst" which removes the first item from the task list
 */
 function removeFirst() {
   let liArray = document.querySelectorAll("li");
-  let liArrayL = liArray.length;
-  if (liArrayL === 0) {
+  if (liArray.length === 0) {
     alert("There are no entries to remove.");
   } else {
     liArray[0].remove();
