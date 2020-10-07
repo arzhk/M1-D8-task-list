@@ -45,7 +45,15 @@ function removeFirst() {
 /* EXERCISE 8: 
 Create a method "getTasksAsArray" which returns (and print to the console) an array containing the tasks as string
 */
-function getTasksAsArray() {}
+function getTasksAsArray() {
+  let liArray = document.querySelectorAll("li");
+  let newArray = [];
+  for (let i = 0; i < liArray.length; i++) {
+    newArray.push(liArray[i].innerText);
+  }
+  newArray = newArray.join(" ");
+  console.log(newArray);
+}
 
 /* EXERCISE 9:
 Create a method "changeTaskBackgroundColor" which takes the color from the color picker with an 
