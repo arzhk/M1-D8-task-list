@@ -7,12 +7,13 @@ Suggestion:
 */
 
 function addNewTask() {
-  const taskList = document.querySelector("#myTaskList");
-  let newLi = document.createElement("li");
-  let newliContent = document.querySelector("#newTask").value;
-  newLi.innerText = newliContent;
-  taskList.appendChild(newLi);
-  document.querySelector("#newTask").value = "";
+  const taskList = document.querySelector("#myTaskList"); //Find the reference point for the list
+  let newLi = document.createElement("li"); // Create a new li element
+  let newLiContent = document.querySelector("#newTask").value; // Pulling the value from the input box into a variable
+
+  newLi.innerText = newLiContent; // Set the new li content to the value in the input box
+  taskList.appendChild(newLi); // Push the new element into the tasklist
+  document.querySelector("#newTask").value = ""; // Clear out the value in the input box
 }
 
 /* EXERCISE 6: 
@@ -21,6 +22,7 @@ Create a method "removeLast" which removes the last item from the task list
 
 function removeLast() {
   let liArray = document.querySelectorAll("li");
+
   if (liArray.length === 0) {
     alert("There are no entries to remove.");
   } else {
@@ -33,6 +35,7 @@ Create a method "removeFirst" which removes the first item from the task list
 */
 function removeFirst() {
   let liArray = document.querySelectorAll("li");
+
   if (liArray.length === 0) {
     alert("There are no entries to remove.");
   } else {
@@ -46,6 +49,7 @@ Create a method "getTasksAsArray" which returns (and print to the console) an ar
 function getTasksAsArray() {
   let liArray = document.querySelectorAll("li");
   let newArray = [];
+
   for (let i = 0; i < liArray.length; i++) {
     newArray.push(liArray[i].innerText);
   }
@@ -57,7 +61,24 @@ function getTasksAsArray() {
 Create a method "changeTaskBackgroundColor" which takes the color from the color picker with an 
 onchange event listener ad applies it as background to every list item
 */
-function changeTaskBackgroundColor() {}
+
+let colourValue;
+
+let testB = function () {
+  let colourValueHold = document.querySelector("#colorPicker").value;
+  colourValue = colourValueHold;
+};
+
+window.addEventListener("DOMContentLoaded", function () {
+  document.querySelector("#colorPicker").addEventListener("change", testB);
+});
+
+function changeTaskBackgroundColor() {
+  let liE = document.querySelectorAll("li");
+  for (let i = 0; i < liE.length; i++) {
+    liE[i].style.backgroundColor = colourValue;
+  }
+}
 
 /* EXTRA */
 
